@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+//COLORES
+$HeaderClaro: rgba(229, 233, 247, 0.637);
+$HeaderOscuro: rgba(73, 53, 69, .5);
+$BodyClaro: #eef0f9;
+$BodyOscuro: #1b0521;
+$Morado: #240b2b;
+$Gris: #e5e5e5;
+$ColorSecundarioOscuro: #1b333f;
+$ColorSecundarioClaro: #1b0521;
+$ColorFuenteClaro: white;
+$ColorFuenteOscuro:#15142f;
+$FondoFotoOscuro: #3c535b;
+$FondoFotoClaro: #7bafbf;
+$NaranjaClaro: #fab35c;
+$NaranjaOscuro: #b88344;
+$CelesteClaro: #48bee5;
+$CelesteOscuro: #484970;
+$Blanco: #ffffff;
+$VerdeClaro: rgb(122, 247, 176);
+$VerdeOscuro: rgb(26, 124, 69);
+//FUENTES
+$FuentePrincipal: 'Roboto', sans-serif;
+//RESOLUCIONES
+$telefonoChico: 350px;
+$telefono: 480px;
+$tablet: 830px;
+$desktop: 1024px;

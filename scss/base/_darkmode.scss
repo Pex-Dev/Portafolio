@@ -1,0 +1,76 @@
+@use '../base/variables' as v;
+
+body{
+    &.darkmode{
+        background-color: v.$BodyOscuro;        
+        .header{
+            background-color: v.$HeaderOscuro;
+            color: v.$ColorFuenteClaro;
+        }
+        .sobre-mi{
+            color: v.$ColorFuenteClaro;
+            .fondo{
+                background-color: v.$FondoFotoOscuro;
+            }
+        }
+        .habilidades{
+            background-color: v.$Morado;
+            color: v.$ColorFuenteClaro; 
+            .span-titulo {     
+                background-color: v.$Morado;
+            }           
+        }
+        .proyectos{
+            background-color: v.$Morado;
+            color: v.$ColorFuenteClaro; 
+            .span-titulo {     
+                background-color: v.$Morado;
+            }           
+        }
+        .titulo{
+            border-bottom: 1px solid v.$ColorFuenteClaro;             
+        }
+        .modal-contenedor{
+            background-color: v.$ColorSecundarioOscuro;
+            color: v.$ColorFuenteClaro;
+        }
+        .btnCerrar{
+            color: white;
+        }
+        .btnCerrar #Vector {
+            stroke: currentColor;
+        }
+        .menu path {
+            stroke: white;
+        }
+        .contacto{
+            color: v.$ColorFuenteClaro;
+            background-color: v.$Morado;
+            .span-titulo{
+                background-color: v.$Morado;
+            }
+            input,textarea{
+                border: 2px solid white;
+                background-color: v.$ColorSecundarioOscuro;
+                color: v.$ColorFuenteClaro;
+                &::placeholder {
+                    color: rgb(155, 154, 154);
+                }
+                
+            }
+            input:-webkit-autofill,
+            input:-webkit-autofill:hover, 
+            input:-webkit-autofill:focus, 
+            input:-webkit-autofill:active{
+                -webkit-text-fill-color: v.$ColorFuenteClaro !important;
+                -webkit-box-shadow: 0 0 0 30px v.$ColorSecundarioOscuro inset !important;
+            }
+            .btnEnviar{
+                background-color: #004a99;
+                &:hover{
+                    background-color: #1868be;
+                }
+            }
+        }
+    }    
+}

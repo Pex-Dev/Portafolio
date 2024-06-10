@@ -1,0 +1,11 @@
+@use '../base/variables' as v;
+footer{
+    background-color: v.$ColorSecundarioOscuro;
+    text-align: center;
+    padding: 4rem;
+    color: white;
+}
+.aviso-logos{
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}

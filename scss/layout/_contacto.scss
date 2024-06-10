@@ -1,0 +1,90 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.contacto{
+    margin-top: 10rem;
+    background-color: v.$Blanco;
+    padding-top: 20rem;
+    padding-bottom: 8rem;
+    clip-path: polygon(0 6rem, 100% 0, 100% 100%, 0 100%);
+    @include m.telefono {
+        padding-top: 15rem;
+    }
+    @include m.desktop {
+        clip-path: polygon(0 9rem, 100% 0, 100% 100%, 0 100%);
+    }
+    form{
+        margin: 0 auto;
+        margin-top: 7rem;
+        max-width: 80rem;
+    }
+    input,textarea{        
+        border: none;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        padding: .8rem;
+        border-radius: 1rem;
+        background-color: v.$Gris;
+        border: 2px solid rgb(145, 145, 145);
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active{
+        -webkit-box-shadow: 0 0 0 30px v.$Gris inset !important;
+    }
+    textarea{
+        height: 30rem;
+        resize: none;
+        @include m.telefono {
+            height: 40rem;
+        }
+    }
+    .btnEnviar{
+        width: 20rem;
+        border-radius: 3rem;
+        color: white;
+        border: 1px solid white;
+        cursor: pointer;
+        background: rgb(137,139,233);
+        background: linear-gradient(86deg, rgba(137,139,233,1) 0%, rgba(42,36,214,1) 91%);
+        @include m.telefono {
+            width: 100%;
+            padding: 1rem;
+        }
+        &:hover{
+            background: rgb(153, 155, 243);
+            background: linear-gradient(86deg, rgb(153, 155, 243) 0%, rgb(55, 50, 219) 91%);
+        }
+    }
+    .span-titulo {     
+        background-color: v.$Blanco;
+    }
+    .campo{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.error{
+    position: relative;
+    display: none;
+    background-color: #c7194a;
+    text-align: center;
+    padding: .7rem;
+    border-radius: .5rem;
+    margin-top: 1%;
+    margin-bottom: .5rem;
+    color: white;
+    width: auto;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 2rem;
+        top: -1rem;
+        border-left: 1rem solid transparent;
+        border-right: 1rem solid transparent;
+        border-bottom: 1.5rem solid #c7194a;
+        border-top: none;
+    }
+}

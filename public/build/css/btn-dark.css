@@ -1,0 +1,31 @@
+.btn-dark{
+    margin: .2rem;
+    background-color: rgb(45,41,54);
+    width: 5.3rem;
+    height: 2.6rem;
+    border-radius: 5rem;
+    border: 1px solid gray;
+    cursor: pointer;
+    position: relative;
+}
+.btn-dark.active{
+    background-color: #c9d2d3;
+}
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: .2rem;
+    left: .2rem;    
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #e0f1f1;
+    transition: left .2s ease, background-color .2s ease;
+ 
+}
+.circle.active{   
+    left: 2.9rem; 
+    background-color: #373d3d;
+}

@@ -1,0 +1,27 @@
+@use '../base/mixins' as m;
+.bordeIzquierda, .bordeDerecha{
+    height: auto;
+    position: relative;
+    //clip-path: polygon(0 6rem, 100% 0, 100% calc(100% - 6rem), 0 100%);
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    @include m.desktop {
+        //clip-path: polygon(0 12rem, 100% 0, 100% calc(100% - 12rem), 0 100%);
+        padding-top: 10rem;
+        padding-bottom: 10rem;  
+    }
+}
+.bordeIzquierda{
+    clip-path: polygon(0 6rem, 100% 0, 100% calc(100% - 6rem), 0 100%);
+    @include m.desktop {
+        clip-path: polygon(0 12rem, 100% 0, 100% calc(100% - 12rem), 0 100%);
+    }
+}
+.bordeDerecha{
+    padding-top: 13rem;
+    padding-bottom: 13rem;  
+    clip-path: polygon(0 0, 100% 6rem, 100% 100%, 0 calc(100% - 6rem));
+    @include m.desktop {
+        clip-path: polygon(0 0, 100% 10rem, 100% 100%, 0 calc(100% - 10rem));
+    }
+}

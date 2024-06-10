@@ -1,0 +1,55 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.habilidades{
+    background-color: v.$Blanco;  
+    padding-top: 10rem;
+    padding-bottom: 10rem;  
+    @include m.desktop {
+        padding-top: 15rem;
+        padding-bottom: 15rem;    
+    }
+    .span-titulo {     
+        background-color: v.$Blanco;
+    }
+    p{
+        text-align: center;
+    }
+    .habilidades-contenedor{
+        margin-top: 5rem;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(5,1fr);
+        @media (max-width: 880px) {
+            grid-template-columns: repeat(4,1fr);
+        }
+        @media (max-width: 715px) {
+            grid-template-columns: repeat(3,1fr);
+        }
+        @media (max-width: 550px) {
+            grid-template-columns: repeat(3,1fr);
+        }
+        @media (max-width: 395px) {
+            grid-template-columns: repeat(2,1fr);
+        }
+        .tecnologia{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            max-width: 20rem;
+            img{
+                width: auto;
+                max-width: 15rem;
+                filter: drop-shadow(
+                    0 0 10px rgba(0,0,0,.3)
+                );
+                @media (max-width: 550px) {
+                    width: 10rem;
+                }
+                
+            }
+        }
+    }
+}

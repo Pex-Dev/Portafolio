@@ -1,0 +1,67 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-snap-type: y proximity;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: v.$FuentePrincipal;
+    font-size: 1.8rem;
+    background-color: v.$BodyClaro;
+    color: v.$ColorFuenteOscuro;
+    &.bloquear{
+        overflow: hidden;
+    }
+}
+
+p,h1,h2,h3{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 2rem;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+main{        
+    @include m.desktop {
+        margin: 0 auto;
+    }
+}
+.snap-start{
+    @include m.desktop {
+        scroll-snap-align: start;  
+    }    
+}
+.snap-center{
+    @include m.desktop {
+        scroll-snap-align: center;  
+    }
+}
+.contenedor{  
+    margin: 0 auto;
+    padding: 2rem;
+    @include m.desktop {
+        width: 80%;  
+    }
+}
+.titulo{
+    width: 100%; 
+    text-align: center; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+    border-bottom: 1px solid v.$ColorFuenteOscuro; 
+    .span-titulo {     
+        padding:0 10px; 
+    }
+    .span-etiqueta{
+        color: #0095c5;
+    }  
+}

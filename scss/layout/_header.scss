@@ -1,0 +1,63 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.header{
+    width: 100%;
+    height: auto;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;            
+    min-height: 8rem;
+    max-height: 8rem;
+    background-color: v.$HeaderClaro;
+    padding: 2rem 3rem;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    z-index: 8;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    -webkit-box-shadow: 0px 5px 23px 0px rgba(0,0,0,0.29);
+    -moz-box-shadow: 0px 5px 23px 0px rgba(0,0,0,0.29);
+    box-shadow: 0px 5px 23px 0px rgba(0,0,0,0.29);    
+    @include m.tablet {     
+        padding: 1rem; 
+        flex-direction: column;
+    }
+    @include m.telefonoChico {
+        padding: 1rem .2rem; 
+        flex-direction: column;
+    }
+    &.expanded{
+        max-height: 27rem;
+    }
+    .menu{
+       max-width: 5rem;
+    }
+}
+.logo{
+    display: flex;
+    align-items: center;
+    @include m.tablet {
+        width: 100%;
+        justify-content: space-between; 
+    }
+    img{
+        display: none;
+        @include m.tablet {
+            display: block;
+            width: 5rem;
+            cursor: pointer;
+        }        
+    }
+    h1{
+        text-decoration: none;
+        color: #0095c5;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+}
+.logo__dev{
+    color: orange;
+}
+.logo__nombre{
+    color:white;
+}

@@ -1,0 +1,79 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.sobre-mi{
+    padding: 30rem 2rem 30rem 2rem;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    @include m.tablet {        
+        flex-direction: column;
+    }
+    @include m.telefono {
+        padding: 16rem 2rem 10rem 2rem;
+    }
+    .foto{
+        position: relative;
+        width: auto;
+        height: auto;
+        border-radius: 15rem;
+        img{
+            width: auto;
+            height: auto;
+            max-height: 25.4rem;
+            filter: drop-shadow(
+            0 0 10px rgba(0,0,0,.9)
+            );
+        }    
+        overflow: hidden;
+        .fondo{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 25.4rem;    
+            height: 25.4rem;
+            z-index: -1;
+            background-color: v.$FondoFotoClaro;
+        }
+    }
+    .descripcion{
+        width: 60rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        @include m.tablet {
+            h1{
+                text-align: center;
+            }
+            width: auto;
+        }
+        @include m.desktop {
+            flex-direction: row-reverse;
+            p{
+                font-size: 2.5rem;                
+            }
+            h1{
+                    font-size: 4rem;
+            }
+        }
+        @include m.tablet {
+            p{
+                text-align: center;
+            }
+        }
+        .enlaces-iconos{
+            display: flex;
+            justify-content: center;
+            @include m.desktop {
+                flex-direction: column;
+                justify-content: space-between;  
+            }
+            img{
+                max-width: 9rem;
+            }
+            .github{
+                max-width: 8rem;
+            }
+        }
+    }
+}

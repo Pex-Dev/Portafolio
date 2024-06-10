@@ -1,0 +1,17 @@
+{
+  "name": "portafolio_brayan",
+  "version": "1.0.0",
+  "description": "portafolio desarollo web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PexWeb",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.2"
+  }
+}
