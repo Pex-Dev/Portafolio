@@ -151,7 +151,7 @@
                         data-descripcion="Este portafolio web es un proyecto personal que muestra mis habilidades, proyectos y experiencia en desarrollo web. Lo he creado utilizando HTML, JavaScript, Sass y PHP. A través de este proyecto, he aprendido más sobre diseño con CSS y sobre cómo enviar correos electrónicos utilizando PHP. El portafolio es completamente responsivo y está diseñado para proporcionar una experiencia de usuario atractiva y profesional."
                         data-caracteristicas="Sección de proyectos con descripciones detalladas y enlaces-Formulario de contacto con funcionalidad de envío de correos-Diseño responsivo adaptado a diferentes dispositivos-Animaciones y efectos visuales para mejorar la experiencia del usuario"
                         data-tecnologias="HTML-JavaScript-PHP-Sass-Gulp"                        
-                        data-github="https://github.com/PexWeb/pexHouses"
+                        data-github="https://github.com/PexWeb/Portafolio"
                         data-live="https://brayandev.com/"
                     >
                         <div class="contenido">
