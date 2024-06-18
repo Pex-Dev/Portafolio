@@ -101,6 +101,29 @@
                 </p>
                 <div class="proyectos-contenedor" >
                     <div class="proyecto"
+                        data-titulo="Chat Bot"
+                        data-descripcion="Este proyecto es un chatbot que permite a los usuarios interactuar con modelos de inteligencia artificial ejecutados localmente utilizando WebGPU y JavaScript. Los modelos se descargan desde una CDN y se ejecutan en el dispositivo del usuario. El rendimiento del chatbot puede variar según las especificaciones del PC del usuario. Se recomienda utilizar un dispositivo con capacidad adecuada de VRAM para una experiencia óptima."
+                        data-caracteristicas="Selección de Modelos-Ejecución Local-Aviso de Requerimientos"
+                        data-tecnologias="HTML-JavaScript-Sass"                        
+                        data-github="https://github.com/Pex-Dev/chat-bot"
+                        data-live="https://pex-chatbot.netlify.app/"
+                    >
+                        <div class="contenido">
+                            <picture>
+                                <source srcset="build/img/thumbnail-chatbot.webp" type="image/webp">
+                                <img loading="lazy"  src="build/img/thumbnail-chatbot.jpg" alt="Aplicación de chat con IA">
+                            </picture>
+                            <div class="overlay">                                
+                                <div class="contenido-overlay">
+                                    <h3>Chat Bot</h3>
+                                    <p>
+                                        Chat con inteligencia artificial
+                                    </p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div> 
+                    <div class="proyecto"
                         data-titulo="App Clima"
                         data-descripcion="App Clima es una aplicación web que muestra el pronóstico del clima utilizando una API de clima. Los usuarios pueden buscar la ubicación deseada para obtener la información meteorológica actual o permitir que la aplicación detecte automáticamente su ubicación mediante geolocalización. Este proyecto me permitió aprender a integrar y consumir APIs. La aplicación es completamente responsiva y está desarrollada utilizando HTML, JavaScript, PHP, Gulp y Sass."
                         data-caracteristicas="Búsqueda manual de ubicaciones-Detección automática de ubicación por geolocalización-Pronóstico del clima en tiempo real-Diseño responsivo para una mejor experiencia en dispositivos móviles"
@@ -145,7 +168,7 @@
                                 </div>
                             </div>
                         </div>                        
-                    </div>    
+                    </div>   
                     <div class="proyecto"
                         data-titulo="Portafolio"
                         data-descripcion="Este portafolio web es un proyecto personal que muestra mis habilidades, proyectos y experiencia en desarrollo web. Lo he creado utilizando HTML, JavaScript, Sass y PHP. A través de este proyecto, he aprendido más sobre diseño con CSS y sobre cómo enviar correos electrónicos utilizando PHP. El portafolio es completamente responsivo y está diseñado para proporcionar una experiencia de usuario atractiva y profesional."
